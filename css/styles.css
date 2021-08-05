@@ -1,0 +1,445 @@
+/* *******************************Estilos generales*************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-color: #f0a83e;
+  --second-color: #222222;
+  --font-color: #3C2313;
+  --clear-font-color: #FFFFFF;
+}
+
+h2 {
+  font-weight: 700;
+  text-shadow: 4px 3px 0 rgba(253, 253, 253, 0.3);
+}
+
+header section h2:nth-child(2){
+  color: var(--font-color);
+}
+
+header section h2:nth-child(3) {
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-image: url("/img/patita.png");
+}
+
+.headerUno {
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 5px 30px 25px;  
+}
+
+.headerUno article{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+header p{
+  color: #f3f3f3;
+}
+
+
+
+header p:nth-child(2) {
+  margin-left: 20px;
+}
+
+.headerDos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  align-items: center;
+  background-color: var(--main-color);
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.headerDos article{
+    display: flex;
+}
+
+.headerDos nav ul{
+    display: flex;   
+}
+
+.headerDos nav ul li{
+  margin: 30px;  
+}
+
+.headerDos a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700; 
+  line-height: 15px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.headerDos img{
+  width: 30px;
+  margin: 0 5px;
+}
+
+.headerUl{
+    display: flex;    
+}
+
+.headerUl li{
+    margin-left: 10px;
+}
+
+/* .headerUl li:nth-child(3){
+    display: none;
+} */
+
+header p {
+  color: #f3f3f3;
+}
+header p:nth-child(2) {
+  margin-left: 20px;
+}
+
+header div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+main{
+  min-height: calc(100vh - 82px - 25px);
+}
+
+
+footer {
+  font-size: 700;
+  color: #ffffff;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  padding: 5px;
+}
+
+
+/* *******************************Estilos específicos*************************************** */
+/* Home */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 30px;
+  background-image: url("/img/background.png");
+  background-size: cover;
+  
+}
+
+.home h1 {
+height: 54px;
+background-color: #FFFFFF;
+text-align: center;
+width: 460px;
+left: 12676px;
+top: -7362px;
+border-radius: 5px;
+padding-top: 5px;
+margin-bottom: 10px;
+color: 
+#3C2313;
+border-width: 0px;
+
+}
+
+.home h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.home section{
+  border-radius: 20px;
+  width: 450px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.41);
+}
+.contacto{
+  margin-top: 20px;
+  
+}
+
+.home section form input:nth-child(2){
+  width: 265px;
+  height: 40px;
+  left: 530px;
+  top: 484px;
+  background-color: var(--clear-font-color);
+  border-radius: 15px;
+  padding-left: 11px;
+  border-width: 0px;
+ 
+}
+
+.home section form input:nth-child(4){
+  width: 79px;
+  height: 40px;
+  left: 802px;
+  top: 484px;
+  color: white;
+  font-size: 10.5px;
+  font-weight: 700;
+  background: #3C2313;
+  border-radius: 15px;
+  border-width: 0px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+
+
+
+@media(max-width: 480px) and (min-width:320px){
+    header nav{
+        display: none;
+    }
+    .headerUl li:nth-child(-n+2){
+        display: none;
+    }
+    .headerUl li:nth-child(3){
+        display: contents;
+    }
+    main{
+        align-items: center;
+        background-position: right;
+    }
+    main div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }     
+}
+
+
+/* Categorías */
+
+.mainCategorias a{
+  text-align: center;
+  padding-top: 8px;
+  height: 35px;
+  width: 130px;
+  left: 157px;
+  margin-top: 10px;
+  font-size: 15px;
+  background: #E4B455;
+  border-radius: 3.75px;
+  color: var(--clear-font-color);
+  text-decoration: none;
+}
+
+.mainCategorias section:nth-child(1){
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: calc(100vh - 82px - 25px - 100px);
+  
+
+}
+
+.mainCategorias section:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  left: 0px;
+  top: 454px;
+  background-color: var(--main-color);
+}
+
+.mainCategorias section article{
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 300px;
+  top: 142px;
+  border-radius: 5px;
+  background-size: cover;
+  box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.41);
+}
+
+
+.mainCategorias section article:nth-child(1){
+  background-image: url("/img/cat-background.png");
+  padding: 25px;
+}
+
+.mainCategorias section article:nth-child(2){
+  background-image: url("/img/dog-background.png");
+  padding: 25px;
+  align-items: flex-end;
+}
+
+
+/* AlimentoPerros */
+
+
+
+
+.mainPerros{
+  margin-top: 60px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  padding-right: 30px;
+  min-height: calc(100vh - 82px - 25px);
+}
+
+.mainPerros h1{
+  color: var(--font-color);
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: bold;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.mainPerros div{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  align-items: baseline;
+  
+}
+
+.mainPerros div article{
+  width: 400px;
+  height: 312px;
+  left: 380px;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mainPerros a{
+  text-decoration: none;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mainPerros article:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.mainPerros img{
+  height: 90%;
+}
+
+
+
+.mainPerros h3{
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.mainPerros h2{
+font-weight: 500;
+color: #F0A83E;
+}
+
+
+
+
+
+
+/* Ficha técnica */
+
+
+.ficha section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px; 
+  
+}
+
+.ficha article{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  
+}
+
+.ficha h3{
+  margin: 20px;
+  border: #222222 solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--main-color);
+  color: var(--clear-font-color);
+  box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.31);
+}
+
+.ficha table{
+  border: 1px solid var(--second-color);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.31);
+}
+
+.ficha tr :nth-child(1){
+  text-align: left;
+  color:var(--main-color);
+}
+
+.ficha tr :nth-child(2){
+  text-align: right;
+}
+
+.adultoO{
+  height:520px;
+}
