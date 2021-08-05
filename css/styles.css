@@ -32,7 +32,7 @@ header section h2:nth-child(3) {
 }
 
 nav ul {
-  list-style-image: url("/img/patita.png");
+  list-style-image: url("../img/patita.png");
 }
 
 .headerUno {
@@ -150,7 +150,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   padding-right: 30px;
-  background-image: url("/img/background.png");
+  background-image: url("../img/background.png");
   background-size: cover;
   
 }
@@ -224,29 +224,6 @@ border-width: 0px;
   margin-left: 10px;
 }
 
-
-
-
-@media(max-width: 480px) and (min-width:320px){
-    header nav{
-        display: none;
-    }
-    .headerUl li:nth-child(-n+2){
-        display: none;
-    }
-    .headerUl li:nth-child(3){
-        display: contents;
-    }
-    main{
-        align-items: center;
-        background-position: right;
-    }
-    main div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }     
-}
 
 
 /* Categorías */
