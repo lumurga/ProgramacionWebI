@@ -275,12 +275,12 @@ border-width: 0px;
 
 
 .mainCategorias section article:nth-child(1){
-  background-image: url("/ProgramacionWebI/img/cat-background.png");
+  background-image: url("../img/cat-background.png");
   padding: 25px;
 }
 
 .mainCategorias section article:nth-child(2){
-  background-image: url("/ProgramacionWebI/img/dog-background.png");
+  background-image: url("../img/dog-background.png");
   padding: 25px;
   align-items: flex-end;
 }
